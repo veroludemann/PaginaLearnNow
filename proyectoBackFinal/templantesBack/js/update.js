@@ -25,7 +25,7 @@ function modificar() {
         descripcion: d,
         imagen:i
     }
-    let url = "http://localhost:5000/cursos/"+id
+    let url = "http://verolude1987.pythonanywhere.com/cursos/"+id
     var options = {
         body: JSON.stringify(curso),
         method: 'PUT',

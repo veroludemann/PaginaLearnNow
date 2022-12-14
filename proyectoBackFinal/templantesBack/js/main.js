@@ -7,7 +7,7 @@ if (document.getElementById("app")) {
                 cursos: [],
                 errored: false,
                 loading: true,
-                url: "http://localhost:5000/cursos"
+                url: "http://verolude1987.pythonanywhere.com/cursos"
                 }
         },
         methods: {
@@ -23,7 +23,7 @@ if (document.getElementById("app")) {
                     })
             },
             eliminar(curso) {
-                const url = 'http://localhost:5000/cursos/' + curso;
+                const url = 'http://verolude1987.pythonanywhere.com/cursos/' + curso;
                 var options = {
                     method: 'DELETE',
                 }

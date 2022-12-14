@@ -12,7 +12,7 @@ function guardar() {
         imagen: i
 
     }
-    let url = "http://localhost:5000/cursos"
+    let url = "http://verolude1987.pythonanywhere.com/cursos"
     var options = {
         body: JSON.stringify(curso),
         method: 'POST',
