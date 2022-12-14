@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/novedades.css">
+    <script src="https://kit.fontawesome.com/469c19ed62.js" crossorigin="anonymous"></script>
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a class="submenu" href="./index2.html">INICIO</a>
+            <a class="submenu" href="./contacto.html">CONTACTO</a>
+            <a class="submenu" href="./novedades.html">NOVEDADES</a>
+            <a class="submenu" href="../proyectoBackFinal/templantesBack/html/index.html">CURSOS</a>
+        </nav>
+        <div class="sub-title-cursos">
+            <div class="enc-logo">
+                <img src="/img/icono definitivo.png" alt="logo"/>
+            </div>
+            <h1>NOVEDADES</h1> <br>
+            <p>Revisa nuestras ultimas novedades.</p>
+        </div>
+    </header>
+<main>
+    <!-- API -->
+    <div id="app">
+        <div class="container">
+            <div v-for="novedades of novedades" class="tarjeta">
+                <img :src="novedades.foto" :alt="novedades.nombre">
+                <div class="cuerpo">
+                    <h3>{{novedades.nombre}}</h3>
+                    <p>Descripcion:</p>
+                    <p>{{novedades.descripcion}}</p>
+                    <p>{{novedades.cuando}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Encontrá tu curso</h4>
+                    <ul>
+                        <li><a href="../html-front/adultos.html">Adultos</a></li>
+                        <li><a href="../html-front/niños_y_adolescentes.html">Niños y Adolescentes</a></li>
+                        <li><a href="../html-front/empresariales.html">Empresarial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Acerca de Learn Now</h4>
+                    <ul>
+                        <li><a href="../html-front/nosotros.html">Acerca de Learn Now</a></li>
+                        <li><a href="#">Método Learn Now</a></li>
+                        <li><a href="#">Cómo funciona Learn Now</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- <scrip src="../js/form.js"></scrip> -->
+</body>
+</html>
